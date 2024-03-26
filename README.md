@@ -5,7 +5,7 @@
     <div align="center" style="display: inline_block"><br>
         <img align="center" alt="Angular" height="36" width="40" src="https://angular.io/assets/images/logos/angular/angular.svg">
         <img align="center" alt="PWA" height="30" width="40" src="https://angular.io/generated/images/marketing/concept-icons/pwa.svg">
-        <img align="center" alt="Node.js" height="30" width="40" src="https://nodejs.dev/static/images/brand/hexagon/js-green.svg">
+        <img align="center" alt="Node.js" height="30" width="26" src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png">
     <h3 align="center">Demonstration of push notifications with angular and node.</h3>
     </div>
     <p align="center"><a href="https://demo-push-notifications.vercel.app/" target="_blank"><i>Demo 🔗</i></a></p>
