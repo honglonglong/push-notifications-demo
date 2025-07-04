@@ -23,10 +23,10 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.isOnline = this.sw.enabled;
     this.swPush.subscription.subscribe((subscription) => {
-      console.log(subscription);
+      console.log("subscription:" + subscription);
     });
     this.swPush.messages.subscribe((message) => {
-      console.log(message);
+      console.log("message:"+message);
     });
   }
 
