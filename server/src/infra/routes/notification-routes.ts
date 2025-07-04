@@ -37,7 +37,7 @@ router.post("/push/send", async (req: Request, res: Response) => {
             subscriptions.map(sub =>
                 WebPush.sendNotification(sub, JSON.stringify({ notification: notificationPayload }), {
                     vapidDetails: {
-                        subject: "https://push-server-woad.vercel.app",
+                        subject: "https://demo-push-notifications-server.onedaywork.site",
                         publicKey: process.env.VAPID_PUBLICKEY!,
                         privateKey: process.env.VAPID_PRIVATEKEY!
                     }
