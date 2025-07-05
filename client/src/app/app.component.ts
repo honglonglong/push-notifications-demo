@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.isOnline = this.sw.enabled;
+    this.isOnline = this.swPush.isEnabled;
     this.swPush.subscription.subscribe((subscription) => {
       console.log("subscription:" + subscription);
     });
