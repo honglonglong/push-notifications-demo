@@ -11,11 +11,11 @@
 <div class="container mt-4">
   <ul class="list-group">
     <li class="list-group-item">
-      Notificações do browser:
+      notification on browser:
       <span class="badge"
         [class.bg-success]="notificationGranted"
         [class.bg-danger]="!notificationGranted">
-        {{notificationGranted ? "Habilitadas" : "Bloqueadas"}}
+        {{notificationGranted ? "enabled" : "disabled"}}
       </span>
     </li>
     <!-- <li class="list-group-item">
@@ -42,7 +42,7 @@
     [class.btn-outline-secondary]="notificationGranted"
     [disabled]="!notificationGranted"
     (click)="subscribeToNotifications()">
-    Habilitar notificações
+    subscribe
   </button>
 </div>
 
