@@ -40,7 +40,7 @@
   <button class="btn"
     [class.btn-outline-primary]="!notificationGranted"
     [class.btn-outline-secondary]="notificationGranted"
-    [disabled]="!notificationGranted"
+    [disabled]="pushSubscribed && notificationGranted"
     (click)="subscribeToNotifications()">
     subscribe
   </button>
