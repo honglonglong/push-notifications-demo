@@ -31,10 +31,12 @@ export class AppComponent implements OnInit {
   }
 
   public async subscribeToNotifications() {
+    alert(1);
     (await this.notificationsService.subscribeToNotifications()).subscribe({
       next: () => {
         this.pushSubscribed = true;
         this.notificationGranted = window.Notification.permission === 'granted';
+        alert(2);
       }
     });
   }
